@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link rel="stylesheet" href="hmwk7.css">
+		<script type="module" src="./javascripts/AverageCalculator.js"></script>
+	</head>
+	<body class="container">
+			<section class="heading">
+				<h1> The Best Average Calculator Ever!!! </h1>
+			</section>
+
+			<div class="menu-side-bar">
+				<ul>
+					<li>Home</li>
+					<li>About Me</li>
+					<li>Updates</li>
+					<li>Completed Projects</li>
+					<li>Contact Me</li>
+				</ul>
+			</div>
+
+			<div class="content">
+				<p> Please enter one number at a time (1-100), in order to achieve maximum amount of awesomeness possible. Once you type the number, press "Add it to Sum" to add it to the sum, which is displayed after the button is clicked.  Once all your desired numbers have been entered, hit "Calculate" and watch the magic at work! </p>
+
+				<input id="number-grabber" type="number" min="1" max="100">
+				<button id="add-number">Add to Data Set</button>
+				<button id="calculate">Calculate!</button>
+
+				<div id="data-set">
+				</div>
+
+				<div id="results">
+				</div>
+
+				<button id="reset" disabled=true>Reset</button>
+
+				<audio id="button-click" src="buttonClick.wav"></audio>
+				<audio id="the-lick" src="theLick.mp3"></audio>
+				<audio id="reset-rise" src="resetRise.mp3"></audio>
+
+			</div>
+
+			<div class="advertisement">
+				<a href="https://www.amazon.com/Happy-Little-Dinosaurs-Base-Game/dp/B08QPN6KGH">
+					<img src="HappyLittleDinosaurs.jpg" alt="Happy Little Dinosaurs Card Game" style="width:100%;height:50%">
+				</a>
+				<a href="https://www.amazon.com/Fantasy-Flight-Games-Cosmic-Encounter/dp/1589944968">
+					<img src="CosmicEncounter.jpg" alt="Cosmic Encoutner Board Game" style="width:100%;height:50%">
+				</a>
+			</div>
+
+			<section class="footer">
+				<p> This project I had the most trouble with by far, but moreso just because I couldn't find a way to see my site updated. i would change the files around and try to make it better, but because I didn't realize I wasn't hard refreshing the site, none of my changes showed. Luckily contacting Mr. Nakai and getting help from the discord taught me the valuable ctrl-shift-r technique and now I can see what I'm actually doing.  </p>
+				<p>For the Holy Grail Layout, I did have a little trouble with flexbox trying to get it to work, but then I switched to gridbox due to a suggestion in the discord and I got it to work well. As for the scripting, I ran into problems concerning the act I had a semicolon ending every line, which removing seemed to help, and I had trouble getting the input to actually add it to the sum. However, finding the getElementByID.value (according to the internet) helped me solve that quickly. The other problem I had was turning numbers into strings and vice versa, which I was able to solve by adding "" to make sure the number was a string and by using the Number() method to make the "number string" into just an integer that could be added into the sum. </p>
+			</section>
+	</body>
+</html>

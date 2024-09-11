@@ -1,0 +1,51 @@
+html {
+	background-color: rgb(40,41,43);
+	margin: 25px;
+}
+
+h1 {
+	text-align: center;
+	font-size: 2.5em;
+}
+
+ul {
+	line-height: 2.5em;
+}
+
+.container {
+	display: grid;
+	grid-template-columns: 20% 60% 20%;
+	grid-template-rows: 20% 60% 200px;
+	grid-template-areas: 
+	 "header header header"
+	 "menu content advertisement"
+	 "footer footer footer";
+	 align-items: stretch;
+	 justify-items: stretch;
+}
+.heading {
+	grid-area: header;
+	background-color: rgb(185, 204, 235);
+	align-self: start;
+}
+
+.menu-side-bar {
+	grid-area: menu;
+	background-color: rgb(153, 250, 150);
+}
+
+.content {
+	grid-area: content;
+	background-color: rgb(247, 250, 150);
+
+}
+
+.advertisement {
+	grid-area: advertisement;
+}
+
+.footer {
+	grid-area: footer;
+	background-color: rgb(240, 93, 93);
+	align-self: end;
+}

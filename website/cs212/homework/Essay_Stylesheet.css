@@ -1,0 +1,27 @@
+html {
+    background-color: rgb(242, 227, 138);
+    margin: 40px;
+}
+
+h1 {
+    font-family: 'Playfiar Display', serif;
+    font-size: 30px;
+    margin: 10px;
+    color: black;
+    background-color: rgb(94, 235, 113);
+    border-width: 10px;
+}
+
+h2 {
+    font-family: 'Playfiar Display', serif;
+    font-size: 25px;
+    margin: 10px;
+    color: black;
+    background-color: rgb(94, 235, 113);
+    border-width: 10px;
+    }
+
+p {
+    font-size: 20px;
+    font-family: 'Dosis', sans-serif;
+}
